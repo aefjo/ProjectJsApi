@@ -13,7 +13,12 @@
     background-color: crimson;
 }
 
+.active {
+    display: none;
+}
+
 body {
+    position: relative;
     background: url(hand-light-people-girl-woman-photography-1081678-pxhere.com.jpg);
     min-height: 100vh;
     background-size: cover;
@@ -23,6 +28,25 @@ body {
     justify-content: center; 
     align-items: center;
     padding: 0 150px;
+    background-attachment: fixed;
+}
+
+.btnCamera {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.btnCamera ion-icon {
+    color: aliceblue;
+    cursor: pointer;
 }
 
 .box {
@@ -33,6 +57,10 @@ body {
     padding: 15px 50px;
     text-align: center;
     width: 100%;
+}
+
+.boxActive {
+    padding: 20px 0;
 }
 
 .box h1 {
@@ -128,6 +156,10 @@ body {
         width: 100%;
     }
 
+    .boxActive {
+        padding: 25px 0 20px 0;
+    }
+
     .box h1 {
         color: white;
         font-size: 1.9em;
@@ -220,6 +252,10 @@ body {
         background: rgba(255, 255, 255, 0.1);
         padding: 15px;
         width: 100%;
+    }
+
+    .boxActive {
+        padding: 25px 0 10px 0;
     }
 
     .box h1 {
