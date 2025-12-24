@@ -13,7 +13,7 @@ const copyBtn = document.querySelector('#copyBtn');
 randomQuote();
 
 function randomQuote() {
-    fetch("https://api.quotable.io/random").then(res => res.json()).then(result => {
+    fetch("http://api.quotable.io/random").then(res => res.json()).then(result => {
         quoteText.innerText = result.content;
         authorName.innerText = result.author;
     });
@@ -31,3 +31,4 @@ btnCamera.addEventListener('click' , () => {
     copyBtn.classList.toggle('active');
     box.classList.toggle('boxActive');
 });
+
