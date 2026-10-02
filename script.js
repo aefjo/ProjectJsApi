@@ -14,7 +14,7 @@ randomQuote();
 
 function randomQuote() {
     fetch("https://dummyjson.com/quotes/random").then(res => res.json()).then(result => {
-        quoteText.innerText = result.content;
+        quoteText.innerText = result.quote;
         authorName.innerText = result.author;
     });
 }
