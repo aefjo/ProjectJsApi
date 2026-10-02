@@ -13,7 +13,7 @@ const copyBtn = document.querySelector('#copyBtn');
 randomQuote();
 
 function randomQuote() {
-    fetch("http://api.quotable.io/random").then(res => res.json()).then(result => {
+    fetch("https://dummyjson.com/quotes/random").then(res => res.json()).then(result => {
         quoteText.innerText = result.content;
         authorName.innerText = result.author;
     });
